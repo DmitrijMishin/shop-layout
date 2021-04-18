@@ -1,0 +1,83 @@
+.page-name
+    height: 148px
+    background: #F8F3F4
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__heading
+        font-size: 24px
+        line-height: 29px
+        color: #F16D7F
+    &__ul
+        display: flex
+        list-style-type: none
+
+    &__li:last-child .page-name__link
+        font-weight: bold
+        font-size: 14px
+        line-height: 17px
+        color: $colorSelect
+    &__li:not(:last-child)::after
+        content: '/'
+        padding-left: 8px
+        padding-right: 8px
+
+    &__link
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: #636363
+        &:hover
+            color: $colorSelect
+
+.sort
+    padding-top: 39px
+    padding-bottom: 33px
+
+.filter
+    position: relative
+    height: 48px
+    &__name
+        outline: none
+    &__main
+        position: absolute
+        z-index: 2
+        background-color: #fff
+        padding: 13px 16px 16px
+        width: $width4
+        box-sizing: border-box
+        &[open]
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+            border: 1px solid #EBEBEB
+        &[open] .filter__name
+            color: $colorSelect
+        &[open] svg path
+            fill: $colorSelect
+    &__sort
+        margin-top: 16px
+        &[open] .filter__category
+            color: $colorSelect
+
+    &__category
+        border-left: 5px solid $colorSelect
+        &-name
+            display: block
+            height: 37px
+            border-bottom: 1px solid #EBEBEB
+            padding-left: 11px
+            line-height: 37px
+
+    &__content-ul
+        list-style-type: none
+        padding-left: 16px
+        margin-top: 24px
+
+    &__content-links
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+        margin-bottom: 11px
+        display: block
+        &:hover
+            color: $colorSelect

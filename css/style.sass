@@ -1,0 +1,312 @@
+@import wars
+
+*
+    margin: 0
+    padding: 0
+
+body
+    font-family: 'Lato', sans-serif
+
+a
+    text-decoration: none
+
+summary
+    display: block
+
+summary::-webkit-details-marker
+    display: none
+
+.tac
+    text-align: center
+
+.center
+    padding-left: calc(50% - 570px)
+    padding-right: calc(50% - 570px)
+
+.container
+    max-width: 1140px
+    margin: auto
+
+.header
+    background: $colorSize
+    height: 75px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    &__right
+        display: flex
+        column-gap: 33px
+        align-items: center
+
+    &__search
+        margin-left: 41px
+
+.promo
+    background: #F1E4E6
+    display: flex
+    padding-left: calc(50% - 800px)
+    padding-right: calc(50% - 800px)
+
+    &__left
+        width: 50%
+
+    &__right
+        width: 50%
+
+    &__img
+        width: 100%
+
+    &__content
+        margin-top: 30%
+        border-left: 12px solid $colorSelect
+        padding-left: 16px
+
+    &__text
+        color: $colorSelect
+
+    &__h1
+        font-weight: 900
+        font-size: 48px
+        line-height: 58px
+        color: $colorSize
+
+    &__heading
+        font-weight: bold
+        font-size: 32px
+        line-height: 38px
+        color: $colorSize
+
+.sale
+    padding-top: 64px
+    padding-bottom: 96px
+
+    &__box
+        display: flex
+        margin-bottom: 30px
+
+    &__item
+        display: flex
+        position: relative
+
+    &__content
+        position: absolute
+        top: 0
+        left: 0
+        height: 100%
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+    &__text
+        font-size: 16px
+        line-height: 19px
+        text-align: center
+        color: #FFFFFF
+
+    &__heading
+        font-weight: bold
+        font-size: 24px
+        line-height: 29px
+        text-align: center
+        color: $colorSelect
+
+    &__img
+        width: 100%
+
+    &__item:not(:last-child)
+        margin-right: 30px
+
+.fetured-items__text
+    font-size: 14px
+    line-height: 17px
+    color: #9F9F9F
+    margin-bottom: 48px
+
+.product
+    width: 360px
+    background: #F8F8F8
+    position: relative
+
+    &-box
+        display: flex
+        gap: 30px
+        flex-wrap: wrap
+        justify-content: center
+
+    &:hover .product__img
+        filter: brightness(50%)
+
+    &:hover .product__add
+        display: flex
+
+    &__content
+        padding: 24px 16px 20px
+
+    &__name
+        font-size: 13px
+        line-height: 16px
+        color: #000000
+
+    &__text
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: #5D5D5D
+        margin-top: 12px
+        margin-bottom: 18px
+
+    &__price
+        font-size: 16px
+        line-height: 19px
+        color: #F16D7F
+
+    &__add
+        display: none
+        justify-content: center
+        align-items: center
+        height: 44px
+        padding-left: 14px
+        padding-right: 16px
+        border: 1px solid #fff
+        font-size: 14px
+        line-height: 17px
+        color: #FFFFFF
+        position: absolute
+        top: 188px
+        left: 111px
+
+    &__add:hover
+        color: black
+        background-color: #fff
+
+    &__add:hover .product__cart path
+        fill: black
+
+    &__cart
+        margin-right: 11px
+
+    &__button
+        font-size: 16px
+        line-height: 19px
+        color: #F26376
+        padding: 14px 38px
+        outline: 1px solid #F26376
+
+    &__button:hover
+        color: #fff
+        background-color: #F26376
+
+.product__button__box
+    margin-top: 64px
+    text-align: center
+
+.footer__top
+    height: 341px
+    background: $colorSize + #000002
+    margin-top: 108px
+
+    &__content
+        display: flex
+        justify-content: space-around
+        align-items: flex-end
+        text-align: center
+        padding-top: 103px
+        padding-bottom: 94px
+
+        &__box
+            width: 320px
+
+        &__heading
+            font-size: 19.96px
+            line-height: 24px
+            color: #FBFBFB
+            padding: 26px 0 16px
+
+        &__text
+            font-size: 13.972px
+            line-height: 17px
+            color: #FBFBFB
+
+.button-back
+    background-color: $colorSelect
+    &:hover
+        background-color: $colorSelect + #111
+
+.subscribe
+    height: 448px
+    background: url('../img/subscribe-back.png'), url('../img/subscribe.jpg') no-repeat center
+    display: flex
+    &__box
+        width: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+    &__figure
+        width: $width4
+        text-align: center
+    &__consultations__heading
+        width: 360px
+        font-size: 20px
+        line-height: 24px
+        text-align: center
+        color: $colorSize + #000002
+        padding-top: 30px
+    &__content
+        text-align: center
+    &__heading
+        font-size: 24px
+        line-height: 167.2%
+        text-align: center
+        color: $colorSize + #000002
+    &__form
+        padding: 32px
+    &__field
+        font-size: 14px
+        line-height: 17px
+        color: $colorSize + #000002
+        opacity: 0.67
+        background: #E1E1E1
+        padding: 15px 64px 15px 22px
+        border: none
+        border-bottom-left-radius: 24px
+        border-top-left-radius: 24px
+    &__button
+        width: 100px
+        height: 49px
+        border-top-right-radius: 24px
+        border-bottom-right-radius: 24px
+        border: none
+
+.footer__bottom
+    background: $colorSize + #000002
+    height: 79px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    &__intersent
+        font-size: 16px
+        line-height: 19px
+        color: #FBFBFB
+    &__social
+        display: flex
+
+    .icon
+        margin: 7px
+        &__back
+            background: #FFFFFF
+            height: 32px
+            width: 32px
+            display: flex
+        &__badge
+            margin: auto
+        &:hover .icon__back
+            background-color: $colorSelect
+        &:hover .icon__badge path
+            fill: white
+
+@import catalog
+@import registration
