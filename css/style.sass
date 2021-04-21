@@ -129,6 +129,9 @@ summary::-webkit-details-marker
     width: 360px
     background: #F8F8F8
     position: relative
+    transition: all .4s
+    &:hover
+        transform: scale(1.03)
 
     &-box
         display: flex
@@ -177,6 +180,7 @@ summary::-webkit-details-marker
         position: absolute
         top: 188px
         left: 111px
+        transition: all .3s
 
     &__add:hover
         color: black
@@ -194,10 +198,10 @@ summary::-webkit-details-marker
         color: #F26376
         padding: 14px 38px
         outline: 1px solid #F26376
-
-    &__button:hover
-        color: #fff
-        background-color: #F26376
+        transition: all .4s
+        &:hover
+            color: #fff
+            background-color: #F26376
 
 .product__button__box
     margin-top: 64px
@@ -301,6 +305,8 @@ summary::-webkit-details-marker
             height: 32px
             width: 32px
             display: flex
+            transition: all .3s
+
         &__badge
             margin: auto
         &:hover .icon__back
@@ -308,5 +314,69 @@ summary::-webkit-details-marker
         &:hover .icon__badge path
             fill: white
 
+.jello-horizontal
+    &:hover
+        -webkit-animation: jello-horizontal 0.9s both
+        animation: jello-horizontal 0.9s both
+
+    @-webkit-keyframes jello-horizontal
+        0% 
+        -webkit-transform: scale3d(1, 1, 1)
+        transform: scale3d(1, 1, 1)
+
+        30% 
+        -webkit-transform: scale3d(1.25, 0.75, 1)
+        transform: scale3d(1.25, 0.75, 1)
+
+        40% 
+        -webkit-transform: scale3d(0.75, 1.25, 1)
+        transform: scale3d(0.75, 1.25, 1)
+
+        50% 
+        -webkit-transform: scale3d(1.15, 0.85, 1)
+        transform: scale3d(1.15, 0.85, 1)
+
+        65% 
+        -webkit-transform: scale3d(0.95, 1.05, 1)
+        transform: scale3d(0.95, 1.05, 1)
+
+        75% 
+        -webkit-transform: scale3d(1.05, 0.95, 1)
+        transform: scale3d(1.05, 0.95, 1)
+
+        100% 
+        -webkit-transform: scale3d(1, 1, 1)
+        transform: scale3d(1, 1, 1)
+
+    @keyframes jello-horizontal
+        0%
+            -webkit-transform: scale3d(1, 1, 1)
+            transform: scale3d(1, 1, 1)
+
+        30%
+            -webkit-transform: scale3d(1.25, 0.75, 1)
+            transform: scale3d(1.25, 0.75, 1)
+
+        40%
+            -webkit-transform: scale3d(0.75, 1.25, 1)
+            transform: scale3d(0.75, 1.25, 1)
+
+        50%
+            -webkit-transform: scale3d(1.15, 0.85, 1)
+            transform: scale3d(1.15, 0.85, 1)
+
+        65%
+            -webkit-transform: scale3d(0.95, 1.05, 1)
+            transform: scale3d(0.95, 1.05, 1)
+
+        75%
+            -webkit-transform: scale3d(1.05, 0.95, 1)
+            transform: scale3d(1.05, 0.95, 1)
+
+        100%
+            -webkit-transform: scale3d(1, 1, 1)
+            transform: scale3d(1, 1, 1)
+
 @import catalog
 @import registration
+@import cart

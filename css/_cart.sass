@@ -1,0 +1,139 @@
+.shopping
+    margin-top: 96px
+    margin-bottom: 128px
+    display: flex
+    justify-content: space-between
+    &__product_cart
+        display: flex
+        justify-content: flex-start
+        width: 652px
+        height: 306px
+        margin-bottom: 40px
+        background: #FFFFFF
+        filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13))
+    &__product__img
+        height: 306px
+    &__product__delete
+        position: absolute
+        padding-left: 612px
+        padding-top: 28px
+        &__button
+            background-color: white
+            border: none
+            &:hover path
+                fill: $colorSelect
+
+    &__product__buttons
+        display: flex
+        justify-content: space-between
+        margin-top: 72px
+    &__product__button
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: #000000
+        background: #FFFFFF
+        padding: 16px 40px
+        border: 1px solid #A4A4A4
+        transition: all .3s
+        &:hover
+            color: #FFFFFF
+            background-color: #A4A4A4
+
+    .product__info
+        padding-left: 31px
+        &__heading
+            font-size: 24px
+            line-height: 29px
+            color: $colorSize
+            width: 200px
+            padding: 22px 0 42px 0
+        &__text
+            font-size: 22px
+            line-height: 26px
+            color: #575757
+            padding-bottom: 6px
+        &__price
+            font-size: 22px
+            line-height: 26px
+            color: $colorSelect
+        &__quantity
+            padding: 1px 16px
+            border: 1px solid #EAEAEA
+
+.shopping__information
+    width: $width4
+
+.shopping__adress
+    &__heading
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: #222222
+        padding-top: 16px
+        padding-bottom: 20px
+    &__input
+        width: $width4
+        padding: 14px 16px
+        margin-bottom: 20px
+        border: 1px solid #A4A4A4
+        box-sizing: border-box
+    &__button
+        font-weight: 300
+        font-size: 11px
+        line-height: 13px
+        padding: 10px 14px
+        color: #4A4A4A
+        background: #FFFFFF
+        border: 1px solid #A4A4A4
+        margin-top: 4px
+        transition: all .3s
+
+        &:hover
+            color: #FFFFFF
+            background-color: #A4A4A4
+
+.shopping__sum
+    width: $width4
+    height: 214px
+    background: #F5F3F3
+    margin-top: 57px
+    text-align: right
+    &__text
+        padding: 39px 34px 12px
+        font-size: 11px
+        line-height: 13px
+        color: #4A4A4A
+    &__heading
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: #222222
+        padding-bottom: 21px
+        padding-right: 37px
+    &__price
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: $colorSelect
+    &__button
+        margin-top: 17px
+        padding: 16px 43px
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: #FFFFFF
+        background: $colorSelect
+        border: none
+        transition: all .4s
+        &:hover
+            background-color: $colorSelect + #111
+            transform: scale(1.04)
+
+.button__box
+    text-align: center
+
+hr
+    width: 275px
+    color: #E2E2E2
+    margin: auto
