@@ -1,0 +1,92 @@
+.product__photos
+    height: 777px
+    background: #F7F7F7
+    position: relative
+    &__buttoms
+        position: absolute
+        width: 100%
+        height: 50%
+        display: flex
+    &__buttom
+        background: rgba(42, 42, 42, 0.15)
+        padding: 12px
+        border: none
+        transition: all .3s
+        &:hover .product__photos__buttom__svg path
+            fill: $colorSelect
+
+    &__carousel
+        text-align: center
+.buttoms-box
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    width: 100%
+.product__speci
+    height: 601px
+    width: 1141px
+    position: absolute
+    background-color: #fff
+    z-index: 2
+    border: 1px solid #EAEAEA
+    left: calc(50% - 570px)
+    margin-top: -64px
+    text-align: center
+    transition: all .4s
+    &:hover
+        transform: scale(1.03)
+    &__header
+        padding-top: 64px
+        padding-bottom: 12px
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: #F16D7F
+    &__hr
+        width: 63px
+        height: 3px
+        background: #EF5B70
+    &__name
+        font-weight: 300
+        font-size: 18px
+        line-height: 22px
+        color: #4D4D4D
+        padding: 12px 0 48px
+    &__text
+        padding: 0 292px
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        text-align: center
+        color: #5E5E5E
+    &__price
+        padding: 32px 0 66px
+        font-weight: 300
+        font-size: 24px
+        line-height: 29px
+        color: #EF5B70
+    &__hr-2
+        width: 641px
+        border: 1px solid #EAEAEA
+.param__speci
+    justify-content: center
+    padding: 48px 0
+.product_speci__add
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    height: 44px
+    width: 211px
+    font-size: 16px
+    line-height: 19px
+    color: #F26376
+    border: 1px solid #FF6A6A
+    transition: all .3s
+    &:hover
+        color: #fff
+        background-color: $colorSelect
+        .product_speci__add__svg path
+            fill: white
+
+.product-box_prev
+    margin-top: 664px
