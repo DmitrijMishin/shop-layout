@@ -1,0 +1,100 @@
+@media  ( max-width: 767px )
+    .center
+        padding-left: 16px
+        padding-right: 16px
+
+    .nav
+        width: 100%
+        min-height: calc( 100vh - #{$heightHeader})
+        padding-top: 64px
+        &__close
+            display: none
+
+    .header__links
+        display: none
+        &_mob
+            background-color: #222
+            position: absolute
+            width: 100%
+            left: 0
+            top: 0
+            height: 48px
+            display: flex
+            justify-content: center
+
+    .promo__left
+        display: none
+    .promo__right
+        height: 363px
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+
+    .promo__content
+        margin-top: 0
+
+    .sale
+        &__box
+            flex-direction: column
+            margin-bottom: 32px
+
+        &__item
+            &_big
+                height: 111px
+            .sale__img
+                object-position: center
+                object-fit: cover
+            &:not(:last-child)
+                margin-right: 0
+                margin-bottom: 32px
+
+    .product:last-child
+        display: block
+
+    .subscribe
+        &__box
+            width: 100%
+            &:last-child
+                margin-top: 59px
+                padding-bottom: 48px
+        &__form
+            padding: 32px 0
+
+        &__field
+            padding: 15px 32px 15px 22px
+
+    .footer
+        &__bottom
+            flex-direction: column-reverse
+            padding-top: 43px
+            gap: 40px
+            padding-bottom: 9px
+
+    .page-name
+        justify-content: center
+
+    .sort
+        center
+        padding-left: 8px
+        padding-right: 8px
+
+    .filter
+        &__main
+            width: 100%
+            padding-left: 0
+            &[open]
+                width: 100vh
+        &__name__span
+            display: none
+        &__name__svg
+            width: 30px
+            height: 20px
+        &__sort
+            width: 100vh
+
+    .param__category
+        padding: 13px 0 13px 20px
+        &-name
+            font-size: 12px
+            line-height: 14px

@@ -28,8 +28,9 @@ summary::-webkit-details-marker
     margin: auto
 
 .header
+    position: relative
     background: $colorSize
-    height: 75px
+    height: $heightHeader
     display: flex
     justify-content: space-between
     align-items: center
@@ -39,8 +40,68 @@ summary::-webkit-details-marker
         column-gap: 33px
         align-items: center
 
+    &__links
+        @extend .header__right
+        &_mob
+            display: none
+
     &__search
         margin-left: 41px
+
+#switcher
+    display: none
+    &:checked ~ .nav
+        display: block
+
+ul
+    list-style-type: none
+
+.nav
+    position: absolute
+    z-index: 3
+    top: $heightHeader
+    right: 0
+    display: none
+    transition: right .3s
+    background-color: #fff
+    width: 232px
+    box-sizing: border-box
+    padding-left: 32px
+    padding-top: 37px
+    padding-bottom: 32px
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+
+    &__h3
+        font-size: 14px
+        line-height: 17px
+        color: #000000
+        margin-bottom: 24px
+        text-transform: uppercase
+
+    &__catalog
+        font-size: 14px
+        line-height: 17px
+        color: $colorSelect
+        padding-bottom: 24px
+
+    &__catalog__ul
+        padding-bottom: 20px
+        padding-left: 22px
+
+    &__catalog__li
+        padding-top: 6px
+        padding-bottom: 6px
+        font-size: 14px
+        line-height: 17px
+    &__catalog__a
+        color: #6F6E6E
+        &:hover
+            color: $colorSelect
+
+    &__close
+        position: absolute
+        top: 16px
+        right: 16px
 
 .promo
     background: #F1E4E6
@@ -267,6 +328,7 @@ summary::-webkit-details-marker
         color: $colorSize + #000002
     &__form
         padding: 32px
+        display: flex
     &__field
         font-size: 14px
         line-height: 17px
@@ -381,3 +443,5 @@ summary::-webkit-details-marker
 @import registration
 @import cart
 @import product
+@import m768
+@import m375
