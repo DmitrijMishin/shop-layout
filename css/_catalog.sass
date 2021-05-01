@@ -122,20 +122,36 @@
 
 .pagination
     width: 284px
+    height: 44px
+    margin: 48px auto 0
     display: flex
-    text-align: center
+    justify-content: space-between
+    align-items: center
     list-style-type: none
     border: 1px solid #EBEBEB
+    &__arrows
+        padding: 15px
+        &:hover .pagination__arrows__link__svg path
+            fill: $colorSelect
+
     &__numbers
         display: flex
-        &__link
-            color: black
-            float: left
-            padding: 8px 16px
-            text-decoration: none
-            align-items: center
-            display: flex
+        justify-content: space-between
+        width: 222px
+    &__number
+        list-style: none
+        font-weight: 300
+    &__link
+        color: black
+        float: left
+        text-decoration: none
+        display: flex
+        align-items: center
+        padding: 5px
+        box-sizing: border-box
+        &:hover
+            color: #fff
+            background-color: $colorSelect
 
 .active
-    background-color: #4CAF50
-    color: white
+    color: $colorSelect
